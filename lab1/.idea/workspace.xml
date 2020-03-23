@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52bfc453-49e7-438b-86e3-062b6dde9cae" name="Default Changelist" comment="" />
+    <list default="true" id="52bfc453-49e7-438b-86e3-062b6dde9cae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,13 +17,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Xi2CDlvmKn2VJX9XG1CpG5phGT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/JavaFXProject" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -78,33 +86,48 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="437" y="79" key="DetectedRootsChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1581515749403" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1581515744865">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1584036579964">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1581515744865" />
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1582135508195">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584036579964" />
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1582544530554">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582135508195" />
-    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1582135508195">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582544530554" />
+    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1582544530553">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582135508195" />
-    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1582135508195">
+    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582544530553" />
+    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1582544530553">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582135508195" />
-    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1582135508195">
+    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582544530553" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1582544530553">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582135508195" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582544530553" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1581515751897">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1581515751897" />
-    <state x="378" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1582133151500">
+    <state x="378" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584036549742">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582133151500" />
+    <state x="378" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584036549742" />
+    <state x="65" y="0" key="new project wizard" timestamp="1584036593786">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1584036593786" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/JavaFXApplication.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
