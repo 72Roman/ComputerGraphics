@@ -46,15 +46,34 @@ public class SolarSystem {
         // create sun
         TransformGroup tgSun = new TransformGroup();
         Transform3D transformSun =new Transform3D();
-        Sphere sun = Star.getSphere(0.5f, "source\\sunmap.jpg");
-        Vector3f vectorSun = new Vector3f(0.0f, 0.0f, 0.0f);
+        Sphere sun = Star.getSphere(0.2f, "source\\sun.jpg");
+        Vector3f vectorSun = new Vector3f(0.6f, 0.0f, 0.0f);
         transformSun.setTranslation(vectorSun);
         tgSun.setTransform(transformSun);
         tgSun.addChild(sun);
         solarSystemTransformGroup.addChild(tgSun);
 
         // create Mercury
-        createPlanet(0.04f,-0.5f,0.0f,0.9f, "source\\mercurymap.jpg");
+        createPlanet(0.008f,0.23f,0.0f,0.9f, "source\\mercury.jpg");
+        // create Venus
+        createPlanet(0.01f, 0.20f,0.0f,0.9f, "source\\venus.jpg");
+        // create Earth
+        createPlanet(0.01f, 0.16f,0.0f,0.9f, "source\\earth.jpg");
+        // create Mars
+        createPlanet(0.01f, 0.11f,0.0f,0.9f, "source\\mars.jpg");
+        // create Jupiter
+        createPlanet(0.08f, -0.05f, 0.0f, 0.9f, "source\\jupiter.jpg");
+        //create Saturn
+        createPlanet(0.05f, -0.2f, 0.0f, 0.9f, "source\\saturn.jpg");
+        //create Uranus
+        createPlanet(0.04f, -0.3f, 0.0f, 0.9f, "source\\uranus.jpg");
+        //create Neptune
+        createPlanet(0.035f, -0.4f, 0.0f, 0.9f, "source\\neptune.jpg");
+        //create Pluto
+        createPlanet(0.005f, -0.5f, 0.0f, 0.9f, "source\\pluto.jpg");
+
+
+
     }
     private void createPlanet(float radius, float x, float y, float z, String picture) {
         TransformGroup tgPlanet = new TransformGroup();

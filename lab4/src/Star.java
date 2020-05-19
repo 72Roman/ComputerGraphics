@@ -13,6 +13,7 @@ public class Star {
         Color3f white = new Color3f(1.0f, 1.0f, 1.0f);
         Color3f black = new Color3f(0f, 0f, 0f);
         ap.setMaterial(new Material(black, white, black, black, 1.0f));
+
         if(picture != "") {
             TextureLoader loader = new TextureLoader(picture, "LUMINANCE", new Container());
             Texture texture = loader.getTexture();
