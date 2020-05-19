@@ -54,9 +54,18 @@ public class SolarSystem {
         solarSystemTransformGroup.addChild(tgSun);
 
         // create Mercury
-        
+        createPlanet(0.04f,-0.5f,0.0f,0.9f, "source\\mercurymap.jpg");
     }
-
+    private void createPlanet(float radius, float x, float y, float z, String picture) {
+        TransformGroup tgPlanet = new TransformGroup();
+        Transform3D transformPlanet = new Transform3D();
+        Sphere planet = Planet.getSphere(radius, picture);
+        Vector3f vectorPlanet = new Vector3f(x, y, z);
+        transformPlanet.setTranslation(vectorPlanet);
+        tgPlanet.setTransform(transformPlanet);
+        tgPlanet.addChild(planet);
+        solarSystemTransformGroup.addChild(tgPlanet);
+    }
 
 
 }
