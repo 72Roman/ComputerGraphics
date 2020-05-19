@@ -6,20 +6,18 @@ import javax.media.j3d.*;
 import javax.swing.Timer;
 import javax.vecmath.*;
 
-public class SolarSystem implements ActionListener {
+public class SolarSystem {
     private TransformGroup solarSystemTransformGroup;
     private Transform3D solarSystemTransform3D = new Transform3D();
-    private Timer timer;
 
     public static void main(String[] args) {
         new SolarSystem();
     }
     public SolarSystem() {
-        timer = new Timer(50, this);
-        timer.start();
         BranchGroup scene = createGraphScene();
         SimpleUniverse u = new SimpleUniverse();
         u.getViewingPlatform().setNominalViewingTransform();
+        u.addBranchGraph(scene);
     }
     public BranchGroup createGraphScene() {
         BranchGroup objRoot =new BranchGroup();
@@ -46,6 +44,19 @@ public class SolarSystem implements ActionListener {
     }
     private void buildSolarSystem() {
         // create sun
+        TransformGroup tgSun = new TransformGroup();
+        Transform3D transformSun =new Transform3D();
+        Sphere sun = Star.getSphere(0.5f, "source\\sunmap.jpg");
+        Vector3f vectorSun = new Vector3f(0.0f, 0.0f, 0.0f);
+        transformSun.setTranslation(vectorSun);
+        tgSun.setTransform(transformSun);
+        tgSun.addChild(sun);
+        solarSystemTransformGroup.addChild(tgSun);
+
+        // create Mercury
+        
     }
+
+
 
 }
