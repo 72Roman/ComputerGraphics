@@ -51,10 +51,16 @@ public class SolarSystem {
         Transform3D transformSun =new Transform3D();
         Sphere sun = Star.getSphere(0.2f, "source\\sun.jpg");
         Vector3f vectorSun = new Vector3f(0.6f, 0.0f, 0.0f);
+        PointLight sunLight = new PointLight(true,  new Color3f(1.0f, 1.0f, 1.0f),
+                new Point3f(0.0f, 0.0f, 0.0f),
+                new Point3f(1.0f, 0.0f, 0.0f));
+        sunLight.setInfluencingBounds(bounds);
         transformSun.setTranslation(vectorSun);
         tgSun.setTransform(transformSun);
         tgSun.addChild(sun);
+        tgSun.addChild(sunLight);
         solarSystemTransformGroup.addChild(tgSun);
+
 
         // create Mercury
         createPlanet(0.008f,0.23f,0.0f,0.0f, 10, "source\\mercury.jpg");
