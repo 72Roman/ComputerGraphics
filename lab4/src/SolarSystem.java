@@ -1,3 +1,5 @@
+import java.applet.Applet;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import com.sun.j3d.utils.behaviors.mouse.MouseRotate;
@@ -10,7 +12,6 @@ import javax.vecmath.*;
 
 public class SolarSystem {
     private TransformGroup solarSystemTransformGroup;
-    private Transform3D solarSystemTransform3D = new Transform3D();
     private BoundingSphere bounds = new BoundingSphere(new Point3d(0,0,0), 100.0);
 
     public static void main(String[] args) {
@@ -63,23 +64,23 @@ public class SolarSystem {
 
 
         // create Mercury
-        createPlanet(0.008f,0.23f,0.0f,0.0f, 10, "source\\mercury.jpg");
+        createPlanet(0.008f,0.23f,0.0f,0.0f, "source\\mercury.jpg");
         // create Venus
-        createPlanet(0.01f, 0.20f,0.0f,0.0f, 10, "source\\venus.jpg");
+        createPlanet(0.01f, 0.20f,0.0f,0.0f, "source\\venus.jpg");
         // create Earth
-        createPlanet(0.01f, 0.16f,0.0f,0.0f, 10, "source\\earth.jpg");
+        createPlanet(0.01f, 0.16f,0.0f,0.0f, "source\\earth.jpg");
         // create Mars
-        createPlanet(0.01f, 0.11f,0.0f,0.0f, 5, "source\\mars.jpg");
+        createPlanet(0.01f, 0.11f,0.0f,0.0f, "source\\mars.jpg");
         // create Jupiter
-        createPlanet(0.08f, -0.05f, 0.0f, 0.0f, 100,"source\\jupiter.jpg");
+        createPlanet(0.08f, -0.05f, 0.0f, 0.0f,"source\\jupiter.jpg");
         //create Saturn
-        createPlanet(0.05f, -0.2f, 0.0f, 0.0f, 1000, "source\\saturn.jpg");
+        createPlanet(0.05f, -0.2f, 0.0f, 0.0f, "source\\saturn.jpg");
         //create Uranus
-        createPlanet(0.04f, -0.3f, 0.0f, 0.0f, 20, "source\\uranus.jpg");
+        createPlanet(0.04f, -0.3f, 0.0f, 0.0f, "source\\uranus.jpg");
         //create Neptune
-        createPlanet(0.035f, -0.4f, 0.0f, 0.0f, 15, "source\\neptune.jpg");
+        createPlanet(0.035f, -0.4f, 0.0f, 0.0f, "source\\neptune.jpg");
         //create Pluto
-        createPlanet(0.005f, -0.5f, 0.0f, 0.0f, 1000, "source\\pluto.jpg");
+        createPlanet(0.005f, -0.5f, 0.0f, 0.0f,"source\\pluto.jpg");
 
         MouseRotate rotate = new MouseRotate(solarSystemTransformGroup);
         rotate.setFactor (0.02);
@@ -89,8 +90,8 @@ public class SolarSystem {
 
 
     }
-    private void createPlanet(float radius, float x, float y, float z, int selfRotationSpeed, String picture) {
-        BoundingSphere bounds =new BoundingSphere(new Point3d(0.0,0.0,0.0), 100.0);
+    private void createPlanet(float radius, float x, float y, float z, String picture) {
+        BoundingSphere bounds = new BoundingSphere(new Point3d(0.0,0.0,0.0), 100.0);
 
         TransformGroup tgPlanet = new TransformGroup();
         Transform3D transformPlanet = new Transform3D();
@@ -103,6 +104,4 @@ public class SolarSystem {
         tgPlanet.addChild(planet);
         solarSystemTransformGroup.addChild(tgPlanet);
     }
-
-
 }
